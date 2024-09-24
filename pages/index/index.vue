@@ -24,10 +24,10 @@
 </template>
 
 <script>
-	import NavBar from "../../components/navbar.vue"
-	import Coursenav from "../../components/coursenav.vue";
-	import FreeCard from "../../components/freecard.vue";
-	import banner from '../../data/banner.js';
+	import NavBar from "@/components/navbar.vue"
+	import Coursenav from "@/components/coursenav.vue";
+	import FreeCard from "@/components/freecard.vue";
+	import banner from '@/data/banner.js';
 	export default {
 		data() {
 			return {
