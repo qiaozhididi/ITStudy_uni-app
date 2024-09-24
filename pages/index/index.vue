@@ -9,11 +9,13 @@
 				</swiper-item>
 			</swiper>
 		</view>
+		<Coursenav></Coursenav>
 	</view>
 </template>
 
 <script>
 	import NavBar from "../../components/navbar.vue"
+	import Coursenav from "../../components/coursenav.vue";
 	import banner from '../../data/banner.js';
 	export default {
 		data() {
@@ -23,6 +25,7 @@
 			this.topBanner = banner.top_banner
 		},
 		mounted() {
+			// 网络请求：
 			// uni.request({
 			// 	url: "http://localhost:3000/api/banner",
 			// 	success(res) {
@@ -33,7 +36,8 @@
 			// })
 		},
 		components: {
-			NavBar
+			NavBar,
+			Coursenav
 		},
 		methods: {
 
