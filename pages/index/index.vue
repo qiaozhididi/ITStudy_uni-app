@@ -19,7 +19,7 @@
 	import banner from '../../data/banner.js';
 	export default {
 		data() {
-			topBanner: ""
+			topBanner: []
 		},
 		onLoad() {
 			this.topBanner = banner.top_banner

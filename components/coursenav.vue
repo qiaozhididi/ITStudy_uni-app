@@ -9,6 +9,7 @@
 </template>
 
 <script>
+	import courseNav from '../data/nav.js';
 	export default {
 		name: "coursenav",
 		data() {
@@ -17,15 +18,17 @@
 			};
 		},
 		mounted() {
+			this.list = courseNav.data
 			//网络请求:
-			uni.request({
-				url: "http://localhost:3000/api/nav",
-				success: res => {
-					if (res.data.status === 200) {
-						this.list = res.data.result.data
-					}
-				}
-			})
+			// uni.request({
+			// 	url: "http://localhost:3000/api/nav",
+			// 	success: res => {
+			// 		if (res.data.status === 200) {
+			// 			// this.list = res.data.result.data
+			// 			// console.log( res.data.result.data)
+			// 		}
+			// 	}
+			// })
 		}
 	}
 </script>
