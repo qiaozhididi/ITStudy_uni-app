@@ -31,6 +31,15 @@
 		},
 		mounted() {
 			this.list = recommend.data
+			//网络请求
+			// uni.request({
+			// 	url: "http://localhost:3000/api/recommend",
+			// 	success: (res) => {
+			// 		if (res.data.status === 200) {
+			// 			this.list = res.data.result.data;
+			// 		}
+			// 	},
+			// })
 		}
 	}
 </script>
