@@ -13,12 +13,20 @@
 		<view class="online-box">
 			<image class="online-img" :src="indexBanner.img_url" mode="widthFix"></image>
 		</view>
+		<view class="free-box">
+			<view class="free-t-box public-tow-box">
+				<view class="public-t">
+					<FreeCard />
+				</view>
+			</view>
+		</view>
 	</view>
 </template>
 
 <script>
 	import NavBar from "../../components/navbar.vue"
 	import Coursenav from "../../components/coursenav.vue";
+	import FreeCard from "../../components/freecard.vue";
 	import banner from '../../data/banner.js';
 	export default {
 		data() {
@@ -45,7 +53,8 @@
 		},
 		components: {
 			NavBar,
-			Coursenav
+			Coursenav,
+			FreeCard
 		},
 		methods: {
 
@@ -91,6 +100,26 @@
 			.online-img {
 				width: 724rpx;
 				height: 132rpx;
+			}
+		}
+
+		.free-box {
+			.public-tow-box {
+				display: flex;
+				width: 100%;
+				justify-content: center;
+				align-items: center;
+				box-sizing: border-box;
+				overflow: hidden;
+				padding: 0 15px;
+				justify-content: space-between;
+				align-content: space-between;
+				flex-wrap: wrap;
+
+				.public-t {
+					font-size: 20px;
+					font-weight: 700;
+				}
 			}
 		}
 	}
