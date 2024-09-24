@@ -34,6 +34,10 @@
 				</view>
 			</view>
 		</view>
+		<view class="daotu_box">
+			<view class="daotu_T">驱动教学</view>
+			<image :src="footBanner.img_url" mode="widthFix"></image>
+		</view>
 	</view>
 </template>
 
@@ -49,11 +53,13 @@
 			return {
 				topBanner: [],
 				indexBanner: "",
+				footBanner: ""
 			};
 		},
 		onLoad() {
 			this.topBanner = banner.top_banner;
 			this.indexBanner = banner.index_banner;
+			this.footBanner = banner.foot_banner
 		},
 		mounted() {
 			// 网络请求：
@@ -63,6 +69,7 @@
 			// 		if (res.data.status === 200) {
 			// 			this.topBanner = res.data.result.top_banner
 			// 			this.indexBanner = res.data.result.index_banner
+			// 			this.footBanner = res.data.result.foot_Banner
 			// 		}
 			// 	}
 			// })
@@ -136,6 +143,27 @@
 					font-size: 20px;
 					font-weight: 700;
 				}
+			}
+
+		}
+
+		.daotu_box {
+			display: flex;
+			box-sizing: border-box;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			.daotu_T {
+				font-size: 18px;
+				font-weight: 700;
+				margin-bottom: 15px;
+			}
+
+			image {
+				width: 700rpx;
+				height: 634rpx;
+				margin: 0 0 15px 0;
 			}
 		}
 	}

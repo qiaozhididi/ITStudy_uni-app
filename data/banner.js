@@ -16,6 +16,6 @@ export default {
 		"img_url": "../../static/onlineimg.png"
 	},
 	"foot_banner": {
-		"img_url": "../../static/runimg.png"
+		"img_url": "../../static/daotu.png"
 	},
 }
