@@ -41,6 +41,15 @@
 				"navigationBarBackgroundColor": "#4affc3",
 				"navigationBarTextStyle": "white"
 			}
+		},
+		{
+			"path": "pages/course/courseInteroduce",
+			"style": {
+				"navigationBarTitleText": "课程详情",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#4affc3",
+				"navigationBarTextStyle": "white"
+			}
 		}
 	],
 	"globalStyle": {

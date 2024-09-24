@@ -1,6 +1,6 @@
 <template>
 	<view class="course-nav">
-		<view class="course-nav-info" v-for="(item,index) in list" :key=" index">
+		<view @click="clickCourseHandler(item.id)" class="course-nav-info" v-for="(item,index) in list" :key=" index">
 			<text class="course-nav-icon icon iconfont" :class="item.icon"></text>
 			<view class="course-info-text">{{item.text}}</view>
 		</view>
@@ -28,6 +28,13 @@
 			// 		}
 			// 	}
 			// })
+		},
+		methods: {
+			clickCourseHandler(id) {
+				uni.navigateTo({
+					url: "/pages/course/courseInteroduce?id=" + id
+				})
+			}
 		}
 	}
 </script>
