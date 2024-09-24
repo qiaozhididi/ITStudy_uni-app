@@ -24,8 +24,7 @@
 			// 	url: "http://localhost:3000/api/nav",
 			// 	success: res => {
 			// 		if (res.data.status === 200) {
-			// 			// this.list = res.data.result.data
-			// 			// console.log( res.data.result.data)
+			// 			this.list = res.data.result.data
 			// 		}
 			// 	}
 			// })
