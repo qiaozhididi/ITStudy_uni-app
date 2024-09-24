@@ -4,14 +4,8 @@
 		<view class="index-banner-box">
 			<swiper class="swiper" indicator-active-color="#00f783" :indicator-dots="true" :autoplay="true"
 				:interval="3000" :duration="3000">
-				<swiper-item>
-					<image class="banner" src="../../static/banner1.png" />
-				</swiper-item>
-				<swiper-item>
-					<image class="banner" src="../../static/banner1.png" />
-				</swiper-item>
-				<swiper-item>
-					<image class="banner" src="../../static/banner1.png" />
+				<swiper-item v-for="(item,index) in topBanner" :key="index">
+					<image class="banner" :src="item.img_url" mode="widthFix"></image>
 				</swiper-item>
 			</swiper>
 		</view>
@@ -20,13 +14,23 @@
 
 <script>
 	import NavBar from "../../components/navbar.vue"
+	import banner from '../../data/banner.js';
 	export default {
-
 		data() {
-
+			topBanner: ""
 		},
 		onLoad() {
-
+			this.topBanner = banner.top_banner
+		},
+		mounted() {
+			// uni.request({
+			// 	url: "http://localhost:3000/api/banner",
+			// 	success(res) {
+			// 		if (res.data.status === 200) {
+			// 			this.topBanner = res.data.result.top_banner
+			// 		}
+			// 	}
+			// })
 		},
 		components: {
 			NavBar
