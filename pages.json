@@ -50,6 +50,13 @@
 				"navigationBarBackgroundColor": "#4affc3",
 				"navigationBarTextStyle": "white"
 			}
+		},
+		{
+			"path" : "pages/player/player",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
 		}
 	],
 	"globalStyle": {
