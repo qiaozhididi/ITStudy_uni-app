@@ -11,7 +11,7 @@
 			"style": {
 				"navigationBarTitleText": "课程分类",
 				"enablePullDownRefresh": false,
-				"navigationBarBackgroundColor": "#00f783",
+				"navigationBarBackgroundColor": "#4affc3",
 				"navigationBarTextStyle": "white"
 			}
 		},
@@ -20,7 +20,7 @@
 			"style": {
 				"navigationBarTitleText": "学习中心",
 				"enablePullDownRefresh": false,
-				"navigationBarBackgroundColor": "#00f783",
+				"navigationBarBackgroundColor": "#4affc3",
 				"navigationBarTextStyle": "white"
 			}
 		},
@@ -29,7 +29,7 @@
 			"style": {
 				"navigationBarTitleText": "我的",
 				"enablePullDownRefresh": false,
-				"navigationBarBackgroundColor": "#00f783",
+				"navigationBarBackgroundColor": "#4affc3",
 				"navigationBarTextStyle": "white"
 			}
 		},
@@ -38,7 +38,7 @@
 			"style": {
 				"navigationBarTitleText": "选择城市",
 				"enablePullDownRefresh": false,
-				"navigationBarBackgroundColor": "#00f783",
+				"navigationBarBackgroundColor": "#4affc3",
 				"navigationBarTextStyle": "white"
 			}
 		}
@@ -52,7 +52,7 @@
 	"uniIdRouter": {},
 	"tabBar": {
 		"color": "#999",
-		"selectedColor": "#00b783",
+		"selectedColor": "#00B783",
 		"borderStyle": "white",
 		"backgroundColor": "#fff",
 		"list": [{
