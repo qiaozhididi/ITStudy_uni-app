@@ -1,13 +1,13 @@
 <template>
-	<uni-nav-bar dark :fixed="true" shadow background-color="#4affc3" status-bar left-icon="left" left-text="返回"
-		title="选择城市" @clickLeft="back" />
+	<uni-indexed-list :options="list" />
 </template>
 
 <script>
+	import city from "@/data/city.js"
 	export default {
 		data() {
 			return {
-
+				list: city.list
 			}
 		},
 		methods: {
