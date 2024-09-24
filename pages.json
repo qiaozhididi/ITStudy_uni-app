@@ -3,7 +3,25 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/classify/classify",
+			"style": {
+				"navigationBarTitleText": "课程"
+			}
+		},
+		{
+			"path": "pages/study/study",
+			"style": {
+				"navigationBarTitleText": "学习"
+			}
+		},
+		{
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": "我的"
 			}
 		}
 	],
@@ -13,5 +31,36 @@
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	},
-	"uniIdRouter": {}
+	"uniIdRouter": {},
+	"tabBar": {
+		"color": "#999",
+		"selectedColor": "#00b783",
+		"borderStyle": "white",
+		"backgroundColor": "#fff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/tabar1.png",
+				"selectedIconPath": "static/tabaron1.png"
+			},
+			{
+				"pagePath": "pages/classify/classify",
+				"text": "课程",
+				"iconPath": "static/tabar2.png",
+				"selectedIconPath": "static/tabaron2.png"
+			},
+			{
+				"pagePath": "pages/study/study",
+				"text": "学习",
+				"iconPath": "static/tabar3.png",
+				"selectedIconPath": "static/tabaron3.png"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"text": "我的",
+				"iconPath": "static/tabar4.png",
+				"selectedIconPath": "static/tabaron4.png"
+			}
+		]
+	}
 }
