@@ -60,16 +60,27 @@
 					minId: minID,
 					columnId: newsID
 				}).then(res => {
-					this.newsList = res
+					// 停止下拉刷新
+					uni.stopPullDownRefresh();
+					// 数据合并
+					this.newsList = this.newsList.concat(res)
+					// 设置偏移量 
+					this.minID = res[res.length - 1].id
 				})
 			},
 			changeTab(index) {
 				//更换数据时做初始化处理
 				this.newsList = []
-				this.minID = 0
-				this.newsID = 0
+				// this.minID = 0
+				//保证数据统一性
+				this.newsID = this.tabs[index].newsid
 				this.http(this.size, this.minID, this.tabs[index].newsid)
-			}
+			},
+			//上拉加载数据
+			onReachBottom() {
+				// 接口有点特殊，offset作为偏移量=10，0-10   11-20   21-30
+				this.http(this.size, this.minID, this.newsID)
+			},
 		}
 	}
 </script>
