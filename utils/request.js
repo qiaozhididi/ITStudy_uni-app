@@ -1,10 +1,3 @@
-import {
-	rejects
-} from "assert"
-import {
-	resolve
-} from "url"
-
 // 封装网络请求
 function service(options = {}) {
 	//请求方式：
