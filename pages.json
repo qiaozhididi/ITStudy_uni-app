@@ -9,7 +9,7 @@
 		{
 			"path": "pages/classify/classify",
 			"style": {
-				"navigationBarTitleText": "课程分类",
+				"navigationBarTitleText": "新闻资讯",
 				"enablePullDownRefresh": false,
 				"navigationBarBackgroundColor": "#4affc3",
 				"navigationBarTextStyle": "white"
@@ -79,7 +79,7 @@
 			},
 			{
 				"pagePath": "pages/classify/classify",
-				"text": "课程",
+				"text": "新闻",
 				"iconPath": "static/tabar2.png",
 				"selectedIconPath": "static/tabaron2.png"
 			},
