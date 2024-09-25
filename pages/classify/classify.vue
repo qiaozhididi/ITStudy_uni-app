@@ -51,17 +51,24 @@
 			}
 		},
 		onLoad() {
-			api.getNewsList({
-				pageSize: this.size,
-				minId: this.minID,
-				columnId: this.newsID
-			}).then(res => {
-				this.newsList = res
-			})
+			this.http(this.size, this.min, this.newsID)
 		},
 		methods: {
+			http(size, minID, newsID) {
+				api.getNewsList({
+					pageSize: size,
+					minId: minID,
+					columnId: newsID
+				}).then(res => {
+					this.newsList = res
+				})
+			},
 			changeTab(index) {
-
+				//更换数据时做初始化处理
+				this.newsList = []
+				this.minID = 0
+				this.newsID = 0
+				this.http(this.size, this.minID, this.tabs[index].newsid)
 			}
 		}
 	}
