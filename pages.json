@@ -10,7 +10,7 @@
 			"path": "pages/classify/classify",
 			"style": {
 				"navigationBarTitleText": "新闻资讯",
-				"enablePullDownRefresh": false,
+				"enablePullDownRefresh": true,
 				"navigationBarBackgroundColor": "#4affc3",
 				"navigationBarTextStyle": "white"
 			}
@@ -52,10 +52,18 @@
 			}
 		},
 		{
-			"path" : "pages/player/player",
-			"style" : 
-			{
-				"navigationBarTitleText" : ""
+			"path": "pages/player/player",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/classify/details/details",
+			"style": {
+				"navigationBarTitleText": "新闻详情",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#4affc3",
+				"navigationBarTextStyle": "white"
 			}
 		}
 	],
